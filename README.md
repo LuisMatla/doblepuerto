@@ -175,8 +175,6 @@ Capacitores 22pF desde cada pin a GND
 
 A continuación se muestra el circuito simulado en **Proteus ISIS**:
 
-![Circuito Simulado](images/circuito_simulado.png)
-
 **Descripción del Circuito Simulado:**
 
 El circuito muestra el microcontrolador **PIC16F877A** conectado a:
@@ -196,8 +194,6 @@ El circuito muestra el microcontrolador **PIC16F877A** conectado a:
 ## ✅ Sistema Funcionando
 
 A continuación se muestra el circuito físico montado en protoboard y funcionando correctamente:
-
-![Sistema Funcionando](images/sistema_funcionando.png)
 
 **Descripción del Sistema Físico:**
 
