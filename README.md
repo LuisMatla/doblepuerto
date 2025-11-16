@@ -171,6 +171,28 @@ OSC2 (Pin 14) → Cristal 4MHz
 Capacitores 22pF desde cada pin a GND
 ```
 
+## 🖥️ Simulación del Circuito
+
+A continuación se muestra el circuito simulado en **Proteus ISIS**:
+
+![Circuito Simulado](circuito_simulado.png)
+
+**Descripción del Circuito Simulado:**
+
+El circuito muestra el microcontrolador **PIC16F877A** conectado a:
+
+- **8 LEDs (D1-D8):** Conectados al PORTD (RD0-RD7) con resistencias limitadoras de 220Ω. Los LEDs están configurados con el PIC como sumidero de corriente (sink), por lo que se encienden cuando el pin del PORTD está en estado bajo (0V).
+
+- **4 Pulsadores (R1-R4):** Conectados al PORTB (RB0-RB3) con resistencias pull-down de 220Ω. Cuando un pulsador no está presionado, el pin del PORTB está en estado bajo (0V). Al presionar el pulsador, el pin se conecta a +5V, resultando en estado alto.
+
+**Componentes del Circuito:**
+- Microcontrolador PIC16F877A (U1)
+- 8 LEDs blancos (D1-D8)
+- 8 Resistencias de 220Ω para los LEDs (R5-R12)
+- 4 Pulsadores (R1-R4)
+- 4 Resistencias pull-down de 220Ω (R1-R4)
+- Alimentación +5V y GND
+
 ## 📊 Diagrama de Funcionamiento
 
 ```
