@@ -200,8 +200,16 @@ Capacitores 22pF desde cada pin a GND
 
 ## 👨‍💻 Autor
 
-**Contreras Matla Luis Fernando**  
-📧 S21020225
+**Luis Fernando Contreras Matla.**
+
+## 📚 Información Académica
+
+Esta práctica fue desarrollada como parte de la Experiencia Educativa:
+
+- **Materia:** Microprocesadores y Microcontroladores
+- **Universidad:** Universidad Veracruzana
+- **Facultad:** Ingeniería Eléctrica y Electrónica
+- **Docente:** Rosa María Woo García
 
 ## 📄 Licencia
 
