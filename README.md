@@ -193,6 +193,29 @@ El circuito muestra el microcontrolador **PIC16F877A** conectado a:
 - 4 Resistencias pull-down de 220Ω (R1-R4)
 - Alimentación +5V y GND
 
+## ✅ Sistema Funcionando
+
+A continuación se muestra el circuito físico montado en protoboard y funcionando correctamente:
+
+![Sistema Funcionando](images/sistema_funcionando.png)
+
+**Descripción del Sistema Físico:**
+
+El circuito está montado en una protoboard y muestra:
+
+- **Microcontrolador PIC16F877A:** Montado en el centro de la protoboard con sus 40 pines conectados correctamente.
+
+- **Cristal Oscilador 4MHz:** Conectado a los pines 13 y 14 del PIC, con dos capacitores cerámicos de 22pF conectados a tierra.
+
+- **8 LEDs Amarillos:** Conectados al PORTD (RD0-RD7) del PIC, cada uno con su resistencia limitadora de 220Ω. Los LEDs se encienden cuando el pin correspondiente está activo, mostrando el resultado de la operación.
+
+- **DIP Switch de 4 Posiciones:** Conectado al PORTB (RB0-RB3) del PIC, permitiendo configurar el valor de entrada de 4 bits. Cada switch tiene una resistencia para la configuración pull-up/pull-down.
+
+- **Conexiones de Alimentación:** Cables rojo y negro conectados a los rieles de alimentación de la protoboard (+5V y GND).
+
+**Estado del Sistema:**
+El sistema está funcionando correctamente, leyendo los valores del PORTB y reflejándolos en ambos nibbles del PORTD, tal como se muestra en la imagen donde los primeros LEDs están encendidos según la configuración de los switches.
+
 ## 📊 Diagrama de Funcionamiento
 
 ```
