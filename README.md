@@ -215,13 +215,3 @@ Esta práctica fue desarrollada como parte de la Experiencia Educativa:
 
 Este proyecto es de uso educativo y académico.
 
-## 🙏 Agradecimientos
-
-- Microchip Technology Inc. por el microcontrolador PIC16F877A
-- MPLAB X IDE por el entorno de desarrollo
-- Proteus por las herramientas de simulación
-
----
-
-⭐ Si este proyecto te fue útil, ¡no olvides darle una estrella!
-
