@@ -20,6 +20,15 @@ Este proyecto implementa un sistema de control de doble puerto utilizando el mic
 
 Cuando una entrada está en **nivel alto (1)**, se activan sus dos salidas correspondientes. Cuando está en **nivel bajo (0)**, las salidas se desactivan.
 
+## 📖 Instrucción de la Práctica
+
+Sea el puerto D la salida del sistema donde se conectan 8 leds (el pic funciona como tierra) y en el puerto B están conectados 4PB (RB3 a RB0) donde cuando se encuentren en estado basal (sin tocarlos) otorgan al pic 5V y al pulsarlos otorguen 0V, genere el circuito lógico y la carta asm para que lo que se introduce en el puerto B sea reflejado en ambos nibbles del puerto D.
+
+**Ejemplo:** 
+- `puertoB = "XXXX1100"` → `puertoD = "11001100"`
+
+Donde los 4 bits menos significativos del PORTB (RB3-RB0) se reflejan tanto en el nibble superior como en el nibble inferior del PORTD.
+
 ## 🛠️ Materiales Necesarios
 
 ### Componentes Electrónicos
@@ -109,24 +118,35 @@ cd doblepuerto
 
 ### Conexiones PORTB (Entradas)
 
+Los pulsadores están conectados de manera que:
+- **Estado basal (sin pulsar):** Otorgan 5V al PIC (nivel alto)
+- **Al pulsar:** Otorgan 0V al PIC (nivel bajo)
+
 ```
-PORTB.0 → Interruptor 1 → GND
-PORTB.1 → Interruptor 2 → GND
-PORTB.2 → Interruptor 3 → GND
-PORTB.3 → Interruptor 4 → GND
+PORTB.0 → Pulsador 1 → +5V (pull-up interno o externo)
+PORTB.1 → Pulsador 2 → +5V (pull-up interno o externo)
+PORTB.2 → Pulsador 3 → +5V (pull-up interno o externo)
+PORTB.3 → Pulsador 4 → +5V (pull-up interno o externo)
 ```
 
 ### Conexiones PORTD (Salidas)
 
+El PIC funciona como **tierra (sink)** para los LEDs. La configuración es:
+
 ```
-PORTD.0 → LED 1 (con resistencia 220Ω) → GND
-PORTD.1 → LED 2 (con resistencia 220Ω) → GND
-PORTD.2 → LED 3 (con resistencia 220Ω) → GND
-PORTD.3 → LED 4 (con resistencia 220Ω) → GND
-PORTD.4 → LED 5 (con resistencia 220Ω) → GND
-PORTD.5 → LED 6 (con resistencia 220Ω) → GND
-PORTD.6 → LED 7 (con resistencia 220Ω) → GND
-PORTD.7 → LED 8 (con resistencia 220Ω) → GND
++5V → Resistencia 220Ω → LED → PORTD.X → PIC (tierra)
+```
+
+Conexiones específicas:
+```
++5V → Resistencia 220Ω → LED 1 → PORTD.0 → PIC
++5V → Resistencia 220Ω → LED 2 → PORTD.1 → PIC
++5V → Resistencia 220Ω → LED 3 → PORTD.2 → PIC
++5V → Resistencia 220Ω → LED 4 → PORTD.3 → PIC
++5V → Resistencia 220Ω → LED 5 → PORTD.4 → PIC
++5V → Resistencia 220Ω → LED 6 → PORTD.5 → PIC
++5V → Resistencia 220Ω → LED 7 → PORTD.6 → PIC
++5V → Resistencia 220Ω → LED 8 → PORTD.7 → PIC
 ```
 
 ### Alimentación
