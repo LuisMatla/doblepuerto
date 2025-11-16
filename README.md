@@ -29,6 +29,13 @@ Sea el puerto D la salida del sistema donde se conectan 8 leds (el pic funciona 
 
 Donde los 4 bits menos significativos del PORTB (RB3-RB0) se reflejan tanto en el nibble superior como en el nibble inferior del PORTD.
 
+## 🔧 Tecnologías Utilizadas
+
+![PIC16F877A](https://img.shields.io/badge/PIC16F877A-Microcontroller-blue?style=flat-square)
+![Assembly](https://img.shields.io/badge/Assembly-Language-green?style=flat-square)
+![MPLAB](https://img.shields.io/badge/MPLAB_X-IDE-orange?style=flat-square)
+![Proteus](https://img.shields.io/badge/Proteus-Simulation-purple?style=flat-square)
+
 ## 🛠️ Materiales Necesarios
 
 ### Componentes Electrónicos
