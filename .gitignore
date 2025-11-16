@@ -27,6 +27,8 @@ debug/
 # MPLAB X project files
 *.X/
 nbproject/private/
+# But allow .asm files
+!*.X/*.asm
 
 # Proteus
 *.pdsprj.DESKTOP-*
