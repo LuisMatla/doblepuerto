@@ -41,3 +41,10 @@ Project Backups/
 .DS_Store
 Thumbs.db
 
+# Allow images
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!images/
+

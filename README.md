@@ -175,7 +175,7 @@ Capacitores 22pF desde cada pin a GND
 
 A continuación se muestra el circuito simulado en **Proteus ISIS**:
 
-![Circuito Simulado](circuito_simulado.png)
+![Circuito Simulado](images/circuito_simulado.png)
 
 **Descripción del Circuito Simulado:**
 
